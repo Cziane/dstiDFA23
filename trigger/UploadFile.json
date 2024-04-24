@@ -1,0 +1,26 @@
+{
+	"name": "UploadFile",
+	"properties": {
+		"description": "Each time a file is uploaded in my container we launch the pipeline",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyCSV2SQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/datafactory/blobs/data",
+			"blobPathEndsWith": "user.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7d4bc2a1-8a7a-4dac-b766-c52ec7fdce87/resourceGroups/Datafactoryclass/providers/Microsoft.Storage/storageAccounts/czianesa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
