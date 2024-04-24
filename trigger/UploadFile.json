@@ -14,7 +14,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/datafactory/blobs/data",
+			"blobPathBeginsWith": "/datafactory/blobs/",
 			"blobPathEndsWith": "user.csv",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/7d4bc2a1-8a7a-4dac-b766-c52ec7fdce87/resourceGroups/Datafactoryclass/providers/Microsoft.Storage/storageAccounts/czianesa",
