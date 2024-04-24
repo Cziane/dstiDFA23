@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'DFSQLDatabase'"
 		},
+		"UploadFile_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/7d4bc2a1-8a7a-4dac-b766-c52ec7fdce87/resourceGroups/Datafactoryclass/providers/Microsoft.Storage/storageAccounts/czianesa"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +51,9 @@
 					},
 					"DFSQLDatabase_connectionString": {
 						"value": "[parameters('DFSQLDatabase_connectionString')]"
+					},
+					"UploadFile_properties_typeProperties_scope": {
+						"value": "[parameters('UploadFile_properties_typeProperties_scope')]"
 					}
 				}
 			},

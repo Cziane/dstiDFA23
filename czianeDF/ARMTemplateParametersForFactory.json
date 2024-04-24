@@ -10,6 +10,9 @@
 		},
 		"DFSQLDatabase_connectionString": {
 			"value": ""
+		},
+		"UploadFile_properties_typeProperties_scope": {
+			"value": "/subscriptions/7d4bc2a1-8a7a-4dac-b766-c52ec7fdce87/resourceGroups/Datafactoryclass/providers/Microsoft.Storage/storageAccounts/czianesa"
 		}
 	}
 }
